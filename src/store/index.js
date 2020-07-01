@@ -5,8 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    searchText : String
   },
   mutations: {
+    updateMessage(state,message){
+      state.searchText = message
+      //Thuc hien viec axios
+    }
   },
   actions: {
   },
